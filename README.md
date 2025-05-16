@@ -7,14 +7,20 @@ Project for mechatronic class
 
 -MongoDB
 
-=== main ===
+=== Pico ===
 
 main.py -- need to be running in pico
 
+can edit working presure at line 12
+
+PRESSURE_SETPOINT = 1 #running state
+
+=== Sever ===
+
 Next use laptop to be the sever. 
-  Run bridge.py in Flisk floder ro sending sensor data from pico to Laptop over a USB port handle by MQTT
+  Run bridge.py in Flisk floder -- sending sensor data from pico to Laptop over a USB port handle by MQTT
   
-After that running the app.py to start flask sevice act to web framework sending data from backend to frontend(web interface)
+After that running the app.py to start flask sevice act to be web framework sending data from backend to frontend(web interface)
 
 use DEV ip to test the web interface or http://127.0.0.1:5000/
 
