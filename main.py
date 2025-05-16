@@ -128,12 +128,24 @@ def send_status():
 def handle_serial_command(cmd):
     global button2_stable_state
     global web_manual_hold
+    global PRESSURE_SETPOINT
     try:
         data = ujson.loads(cmd)
         # Direct solenoid control (used by web "Action" button in MANUAL)
         if "solenoid" in data:
             web_manual_hold = 0 if data["solenoid"] else 1  # 0 = pressed, 1 = released
-        # Change mode (simulate Button 1 short press)
+        #pressure change
+        if "pressure_setpoint" in data:
+            try:
+                new_setpoint = float(data["pressure_setpoint"])
+                if 0.05 <= new_setpoint <= 5.0:
+                    PRESSURE_SETPOINT = new_setpoint
+                    print("Pressure setpoint changed to", PRESSURE_SETPOINT)
+                else:
+                    print("Setpoint out of range")
+            except Exception as e:
+                print("Invalid setpoint:", e)
+        # Change mode (simulate Button 1 short press)        
         if data.get("action") == "change_mode":
             if state.current_mode == 0:
                 new_mode = 1
@@ -276,3 +288,4 @@ while True:
         handle_serial_command(cmd)
 
     time.sleep_ms(50)  # Main loop delay for stability
+    
