@@ -8,6 +8,7 @@
         .status-box { border: 1px solid #ccc; padding: 15px; margin: 20px 0; }
         button { padding: 10px 15px; margin: 5px; cursor: pointer; }
         #actionBtn:active { background-color: #4CAF50 !important; }
+        input[type="number"] { width: 120px; padding: 5px; margin-right: 5px; }
     </style>
 </head>
 <body>
@@ -32,10 +33,13 @@
             onmouseleave="handleActionRelease(event)"
             ontouchstart="handleActionPress(event)" 
             ontouchend="handleActionRelease(event)"
-        >
-            Action Button
+        >Action Button</button>
         <button onclick="sendControl({action: 'off_mode'})">OFF</button>
-        </button>
+    </div>
+
+    <div style="margin-top:15px;">
+        <input type="number" id="pressureInput" min="0.05" max="5.0" step="0.01" placeholder="Set pressure (bar)">
+        <button onclick="setPressure()">Set Pressure</button>
     </div>
 
     <p><a href="/history">View History</a></p>
@@ -45,29 +49,37 @@
         let isManualMode = false;
         let isButtonPressed = false;
 
-        socket.on('connect', () => {
-            console.log('Socket.IO Connected');
+        socket.on('connect', function() {
+            document.getElementById('socketStatus').textContent = 'Connected';
         });
 
-        socket.on('status_update', (data) => {
+        socket.on('disconnect', function() {
+            document.getElementById('socketStatus').textContent = 'Disconnected';
+        });
+
+        socket.on('status_update', function(data) {
             document.getElementById('mode').textContent = data.mode || '-';
-            document.getElementById('solenoid').textContent = data.solenoid ? "OFF" : "ON";
+            document.getElementById('solenoid').textContent = data.solenoid ? "ON" : "OFF";
             document.getElementById('water').textContent = data.water ? "PRESENT" : "MISSING";
-            document.getElementById('pressure_bar').textContent = 
-                typeof data.pressure_bar === 'number' ? data.pressure_bar.toFixed(1) : '-';
-            document.getElementById('server_time').textContent = 
+            document.getElementById('pressure_bar').textContent =
+                typeof data.pressure_bar === 'number' ? data.pressure_bar.toFixed(2) : '-';
+            document.getElementById('server_time').textContent =
                 data.server_time ? new Date(data.server_time).toLocaleTimeString() : '-';
 
-            // Auto status logic
+            // Show Auto Status if in AUTO mode
             let autoStatus = "-";
             if (data.mode === "AUTO") {
-                if (data.auto_running) autoStatus = "working";
-                else if (data.auto_waiting) autoStatus = "pause";
-                else autoStatus = "idle";
+                if (data.auto_running) {
+                    autoStatus = "working";
+                } else if (data.auto_waiting) {
+                    autoStatus = "pause";
+                } else {
+                    autoStatus = "idle";
+                }
             }
             document.getElementById('auto_status').textContent = autoStatus;
 
-            // Track manual mode
+            // Track if we're in manual mode
             isManualMode = (data.mode === "MANUAL");
         });
 
@@ -76,7 +88,7 @@
         }
 
         function handleActionPress(event) {
-            event.preventDefault(); // Prevent touch/mouse drag
+            event.preventDefault();
             isButtonPressed = true;
             if (isManualMode) {
                 sendControl({solenoid: 1});
@@ -92,7 +104,15 @@
             }
             isButtonPressed = false;
         }
-    </script>
 
+        function setPressure() {
+            let val = parseFloat(document.getElementById('pressureInput').value);
+            if (!isNaN(val) && val >= 0.05 && val <= 5.0) {
+                sendControl({pressure_setpoint: val});
+            } else {
+                alert("Enter a value between 0.05 and 5.0");
+            }
+        }
+    </script>
 </body>
 </html>
