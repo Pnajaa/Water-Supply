@@ -75,6 +75,11 @@ You can:
 
 2.Can handle machine mode (manual-auto-off) and function(Auto - use action button to chagne state, Manual - hold to use pump)
 
+[Pico LED Status](https://youtu.be/J_779zv18d4?si=_UDpGzsGQTG2D5w2)
+
+[![Watch the video](https://img.youtube.com/vi/J_779zv18d4/0.jpg)](https://youtu.be/J_779zv18d4?si=_UDpGzsGQTG2D5w2)
+
+
 3.Set the pressure setpoint (0.05–5.0 bar) and click Set Pressure
 
 4.View real-time status and history
@@ -101,4 +106,18 @@ If you use a different MongoDB URI, update it in app.py
 7. [Digital to Analog Convertor Module: ET-MINI I2C D/A](https://www.etteam.com/prodintf/ET-MINI-I2C-DA-10V/th-man-ET-MINI-I2C-DA-10V.pdf) 1 Ea, *330.00 ฿*
 ![Image](https://github.com/Pnajaa/Water-Supply/blob/7eb20fb6e453c3e6e84c3923cec3ffeb01c6f8a4/pic/S__13352993_0.jpg)
 ## 6. Demonstration Clips
+[Water Supply @ 2 Bar of Compressed Air Pressure with Auto level control](https://youtu.be/-4KKM27_0G8?si=PFsfHLVXcu9kw8Zn)
 
+[![Watch the video](https://img.youtube.com/vi/-4KKM27_0G8/0.jpg)](https://youtu.be/-4KKM27_0G8?si=PFsfHLVXcu9kw8Zn)
+
+[Water Supply @ 2 Bar of Compressed Air Pressure with Manual level control](https://youtu.be/t14_QqYX_wY?si=O16tVIrwNscYOhKn)
+
+[![Watch the video](https://img.youtube.com/vi/t14_QqYX_wY/0.jpg)](https://youtu.be/t14_QqYX_wY?si=O16tVIrwNscYOhKn)
+
+[Water Supply @ 3 Bar of Compressed Air Pressure with Auto level control](https://youtu.be/GVrn9ShbKTY?si=fIKZL0MBUtPXyBzl)
+
+[![Watch the video](https://img.youtube.com/vi/GVrn9ShbKTY/0.jpg)](https://youtu.be/GVrn9ShbKTY?si=fIKZL0MBUtPXyBzl)
+
+[Water Supply under Varying Compressed Air Pressure with Manual level control](https://youtu.be/gGz0Z9c_rH0?si=NRW8_H563wOkiUoJ)
+
+[![Watch the video](https://img.youtube.com/vi/gGz0Z9c_rH0/0.jpg)](https://youtu.be/gGz0Z9c_rH0?si=NRW8_H563wOkiUoJ)
