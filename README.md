@@ -35,9 +35,9 @@ This project builds upon these advancements by integrating a Raspberry Pi Pico-c
 
 Install Required Python Packages on PC/Server
 
-1.flask
+1. flask
 
-2.MongoDB
+2. MongoDB
 
 -command-
 
@@ -45,13 +45,13 @@ pip install flask flask-socketio eventlet flask-pymongo paho-mqtt pyserial
 
 === Hardware Setup ===
 
-1.Connect wire by fllow the wiring diagram
+1. Connect wire by fllow the wiring diagram
 
-2.Pico (main.py) :
+2. Pico (main.py) :
 
 Upload main.py and your DAC library (e.g., DfrobotGP8403.py) to your Maker Pi Pico using Thonny or ampy.
 
-3.PC/Server :
+3. PC/Server :
 
 Place app.py and bridge.py in the same project folder.
 
@@ -72,7 +72,7 @@ Open your browser and go to http://localhost:5000
 
 You can:
 
-1.Change mode (OFF, MANUAL, AUTO)
+1. _**Change mode (OFF, MANUAL, AUTO)**_
 * System **OFF**
 
 ![Image](https://github.com/Pnajaa/Water-Supply/blob/0de9ad2e907146cb8bc6b250a59a2169d2b90ee2/pic/System%20OFF.png)
@@ -86,11 +86,9 @@ You can:
 ![Image](https://github.com/Pnajaa/Water-Supply/blob/af4880f4727c48cc897db92e6f51aedd7669d7a4/pic/Auto%20Mode.png)
 
 
-2.Can handle machine mode (manual-auto-off) and function(Auto - use action button to chagne state, Manual - hold to use pump)
+2. _**Can handle machine mode (manual-auto-off) and function(Auto - use action button to chagne state, Manual - hold to use pump)**_
 
-**LED Indicators:**
-
-[Pico LED Status](https://youtu.be/J_779zv18d4?si=_UDpGzsGQTG2D5w2)
+**LED Indicators:** [Pico LED Status](https://youtu.be/J_779zv18d4?si=_UDpGzsGQTG2D5w2)
 
 [![Watch the video](https://img.youtube.com/vi/J_779zv18d4/0.jpg)](https://youtu.be/J_779zv18d4?si=_UDpGzsGQTG2D5w2)
 
@@ -115,7 +113,7 @@ You can:
 ![Image](https://github.com/Pnajaa/Water-Supply/blob/e50853c813abe51ee55f43cc403186f92382b058/pic/S__13352973_0.jpg)
 
 
-3.Set the pressure setpoint (0.05–5.0 bar) and click Set Pressure
+3. _**Set the pressure setpoint (0.05–5.0 bar) and click Set Pressure**_
 
 **Setpoint at 1 Bar of Compressed Air Pressure**
 
@@ -126,7 +124,11 @@ You can:
 ![Image](https://github.com/Pnajaa/Water-Supply/blob/e50853c813abe51ee55f43cc403186f92382b058/pic/Set%203%20Bar.png)
 
 
-4.View real-time status and history
+4. _**View real-time status and history**_
+
+
+![Image](https://github.com/Pnajaa/Water-Supply/blob/e153e7df6c6638072207272dd43a5990863a4ea8/pic/System%20Log.png)
+
 
 === If needed ===
 
