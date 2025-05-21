@@ -2,12 +2,12 @@
 # Pneumatic Water-Supply
 Project for MECHATRONICS 2103535
 ## Table of Contents
-1. [The rational of the project](#the-rational-of-the-project)
-2. [Background and Related Previous Works](#background-and-related-previous-works)
-3. [Overall diagram](#overall-diagram)
-4. [Python program](#python-program)
-5. [Part lists](#part-lists)
-6. [Demonstration Clips](#demonstration-clips)
+1. [The rational of the project](#1-the-rational-of-the-project)
+2. [Background and Related Previous Works](#2-background-and-related-previous-works)
+3. [Overall diagram](#3-overall-diagram)
+4. [Python program](#4-python-program)
+5. [Part lists](#5-part-lists)
+6. [Demonstration Clips](#6-demonstration-clips)
 
 
 ## 1. The rational of the project
