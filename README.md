@@ -54,7 +54,9 @@ Upload main.py and your DAC library (e.g., DfrobotGP8403.py) to your Maker Pi Pi
 
 3.PC/Server :
 
-Place app.py, bridge.py, and index.html in the same project folder.
+Place app.py and bridge.py in the same project folder.
+
+Place History.html and index.html in the floder name "template" and also in the project the have the 2 app and bridge files
 
 bridge.py in Flisk floder -- sending sensor data from pico to Laptop over a USB port handle by MQTT Edit SERIAL_PORT = 'COM6' in bridge.py to match your Pico’s serial port (e.g., COM3 on Windows, /dev/ttyACM0 on Linux).
 
