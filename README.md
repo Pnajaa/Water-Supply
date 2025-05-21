@@ -1,6 +1,6 @@
  
 # Water-Supply
-Project for MECHATRONICS 2103535
+Project for **MECHATRONICS 2103535**
 ## Table of Contents
 1. [The rational of the project](#1-the-rational-of-the-project)
 2. [Background and Related Previous Works](#2-background-and-related-previous-works)
@@ -68,28 +68,63 @@ Ensure MongoDB is running locally (mongodb://localhost:27017/water_system).
 
  Use the Web Interface
 Open your browser and go to http://localhost:5000
+![Image](https://github.com/Pnajaa/Water-Supply/blob/7bb21513c3efc68fa7205d741812e0587b6468ff/pic/Web%20Interface.png)
 
 You can:
 
 1.Change mode (OFF, MANUAL, AUTO)
+* System **OFF**
+
+![Image](https://github.com/Pnajaa/Water-Supply/blob/0de9ad2e907146cb8bc6b250a59a2169d2b90ee2/pic/System%20OFF.png)
+
+* System in **Manual Mode**
+
+![Image](https://github.com/Pnajaa/Water-Supply/blob/0de9ad2e907146cb8bc6b250a59a2169d2b90ee2/pic/Manual%20Mode.png)
+
+* System in **Auto Mode**
+
+![Image](https://github.com/Pnajaa/Water-Supply/blob/af4880f4727c48cc897db92e6f51aedd7669d7a4/pic/Auto%20Mode.png)
+
 
 2.Can handle machine mode (manual-auto-off) and function(Auto - use action button to chagne state, Manual - hold to use pump)
 
-LED Indicators:
+**LED Indicators:**
 
 [Pico LED Status](https://youtu.be/J_779zv18d4?si=_UDpGzsGQTG2D5w2)
 
 [![Watch the video](https://img.youtube.com/vi/J_779zv18d4/0.jpg)](https://youtu.be/J_779zv18d4?si=_UDpGzsGQTG2D5w2)
 
-1. Solid Green LED
-lights up solid when code running and Ready
-2. Blinks Green LED
-System is not running
-3. Solid Blue LED
-Missing Water in Storage Tank
+1. **Solid Red LED:** System is OFF.
+
+![Image](https://github.com/Pnajaa/Water-Supply/blob/e50853c813abe51ee55f43cc403186f92382b058/pic/S__13352969_0.jpg)
+
+3. **Solid Green LED:** System is operating under Manual Mode.
+
+![Image](https://github.com/Pnajaa/Water-Supply/blob/e50853c813abe51ee55f43cc403186f92382b058/pic/S__13352971_0.jpg)
+
+5. **Solid Blue LED:** System is filling the water; water is not detected at the level sensor during Auto Mode.
+
+![Image](https://github.com/Pnajaa/Water-Supply/blob/e50853c813abe51ee55f43cc403186f92382b058/pic/S__13352972_0.jpg)
    
+7. **Blink Blue LED:** System is Idle in Auto Mode.
+
+![Image](https://github.com/Pnajaa/Water-Supply/blob/e50853c813abe51ee55f43cc403186f92382b058/pic/S__13352974_0.jpg)
+
+9. **Solid Yellow LED:** System is under Auto Mode and water is detected at the level sensor.
+
+![Image](https://github.com/Pnajaa/Water-Supply/blob/e50853c813abe51ee55f43cc403186f92382b058/pic/S__13352973_0.jpg)
+
 
 3.Set the pressure setpoint (0.05–5.0 bar) and click Set Pressure
+
+**Setpoint at 1 Bar of Compressed Air Pressure**
+
+![Image](https://github.com/Pnajaa/Water-Supply/blob/e50853c813abe51ee55f43cc403186f92382b058/pic/Set%201%20Bar.png)
+
+**Setpoint at 3 Bar of Compressed Air Pressure**
+
+![Image](https://github.com/Pnajaa/Water-Supply/blob/e50853c813abe51ee55f43cc403186f92382b058/pic/Set%203%20Bar.png)
+
 
 4.View real-time status and history
 
@@ -134,3 +169,8 @@ If you use a different MongoDB URI, update it in app.py
 [Web Interface During System Opearation](https://youtu.be/8oSqg5JCmNs)
 
 [![Watch the video](https://img.youtube.com/vi/8oSqg5JCmNs/0.jpg)](https://youtu.be/8oSqg5JCmNs)
+
+
+## Authors
+1. Pee Netsuk 6130373821
+2. Supasin Sinkittiyanont 6472087021
