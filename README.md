@@ -29,36 +29,61 @@ This project builds upon the principles and success of these prior works by inte
 ## 3. Overall diagram
 
 ## 4. Python program
-==libary needed==
 
--flask
+=======How to Run=======
 
--MongoDB
+=== libary needed ===
+Install Required Python Packages on PC/Server
 
-=== Pico ===
+1.flask
 
-main.py -- need to be running in pico
+2.MongoDB
 
-can edit working presure at line 12
+-command-
 
-PRESSURE_SETPOINT = 1 #running state
+pip install flask flask-socketio eventlet flask-pymongo paho-mqtt pyserial
 
-=== Sever ===
+=== Hardware Setup ===
 
-Next use laptop to be the sever. 
-  Run bridge.py in Flisk floder -- sending sensor data from pico to Laptop over a USB port handle by MQTT
-  
-After that running the app.py to start flask sevice act to be web framework sending data from backend to frontend(web interface)
+1.Connect wire by fllow the wiring diagram
 
-use DEV ip to test the web interface or http://127.0.0.1:5000/
+2.Pico (main.py) :
+
+Upload main.py and your DAC library (e.g., DfrobotGP8403.py) to your Maker Pi Pico using Thonny or ampy.
+
+3.PC/Server :
+
+Place app.py, bridge.py, and index.html in the same project folder.
+
+bridge.py in Flisk floder -- sending sensor data from pico to Laptop over a USB port handle by MQTT Edit SERIAL_PORT = 'COM6' in bridge.py to match your Pico’s serial port (e.g., COM3 on Windows, /dev/ttyACM0 on Linux).
+
+app.py in Flisk floder -- act to be web framework sending data from backend to frontend(web interface)
+
+Ensure MongoDB is running locally (mongodb://localhost:27017/water_system).
+
 
 ===Web Interface===
 
--can handle machine mode (manual-auto-off) and function(Auto - use action button to chagne state, Manual - hold to use pump)
+ Use the Web Interface
+Open your browser and go to http://localhost:5000
 
--have interface show the sensor and other setting calue
+You can:
 
--have api to the history page that store the machine history data
+1.Change mode (OFF, MANUAL, AUTO)
+
+2.Can handle machine mode (manual-auto-off) and function(Auto - use action button to chagne state, Manual - hold to use pump)
+
+3.Set the pressure setpoint (0.05–5.0 bar) and click Set Pressure
+
+4.View real-time status and history
+
+=== If needed ===
+
+If you change hardware pins, update them in main.py
+
+If you use a different MQTT broker, update it in app.py and bridge.py
+
+If you use a different MongoDB URI, update it in app.py
 
 ## 5. Part lists
 1. [Microcontroller: Raspberry Pi Pico](https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf)  *230.00 ฿*
