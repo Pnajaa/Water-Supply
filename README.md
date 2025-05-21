@@ -68,7 +68,13 @@ Ensure MongoDB is running locally (mongodb://localhost:27017/water_system).
 
  Use the Web Interface
 Open your browser and go to http://localhost:5000
+
+
 ![Image](https://github.com/Pnajaa/Water-Supply/blob/7bb21513c3efc68fa7205d741812e0587b6468ff/pic/Web%20Interface.png)
+
+[Web Interface Operation](https://youtu.be/HzrLfJGo4F0?si=m5Xr5fIVZuz3PlJd)
+
+[![Watch the video](https://img.youtube.com/vi/HzrLfJGo4F0/0.jpg)](https://youtu.be/HzrLfJGo4F0?si=m5Xr5fIVZuz3PlJd)
 
 You can:
 
