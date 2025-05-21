@@ -75,10 +75,19 @@ You can:
 
 2.Can handle machine mode (manual-auto-off) and function(Auto - use action button to chagne state, Manual - hold to use pump)
 
+LED Indicators:
+
 [Pico LED Status](https://youtu.be/J_779zv18d4?si=_UDpGzsGQTG2D5w2)
 
 [![Watch the video](https://img.youtube.com/vi/J_779zv18d4/0.jpg)](https://youtu.be/J_779zv18d4?si=_UDpGzsGQTG2D5w2)
 
+1. Solid Green LED
+lights up solid when code running and Ready
+2. Blinks Green LED
+System is not running
+3. Solid Blue LED
+Missing Water in Storage Tank
+   
 
 3.Set the pressure setpoint (0.05–5.0 bar) and click Set Pressure
 
@@ -121,3 +130,7 @@ If you use a different MongoDB URI, update it in app.py
 [Water Supply under Varying Compressed Air Pressure with Manual level control](https://youtu.be/gGz0Z9c_rH0?si=NRW8_H563wOkiUoJ)
 
 [![Watch the video](https://img.youtube.com/vi/gGz0Z9c_rH0/0.jpg)](https://youtu.be/gGz0Z9c_rH0?si=NRW8_H563wOkiUoJ)
+
+[Web Interface During System Opearation](https://youtu.be/8oSqg5JCmNs)
+
+[![Watch the video](https://img.youtube.com/vi/8oSqg5JCmNs/0.jpg)](https://youtu.be/8oSqg5JCmNs)
