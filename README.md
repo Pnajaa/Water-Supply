@@ -18,7 +18,7 @@ Efficient water management is a growing concern in both urban and rural settings
 
 Recent developments in embedded systems and low-cost microcontrollers have made it feasible to design compact, intelligent water management solutions. The Raspberry Pi Pico, with its dual-core RP2040 processor and support for MicroPython, has emerged as a popular platform for such applications due to its affordability and versatility.
 
-Previous studies have demonstrated the effectiveness of using non-contact sensors for water level detection that can be placed on the outside of the tank. Additionally, the use of MQTT—a lightweight messaging protocol—has become standard in IoT systems for its efficiency in transmitting sensor data.
+Previous studies have demonstrated the effectiveness of using non-contact sensors for water level detection that can be placed on the outside of the tank. Additionally, the use of MQTT protocol has become standard in IoT systems for its efficiency in transmitting sensor data.
 Web-based interfaces are also commonly employed to visualize real-time data and historical trends, enhancing user engagement and system transparency.
 
 This project builds upon these advancements by integrating a Raspberry Pi Pico-controlled system with a solenoid valve, compressed air regulator, and non-contact water level sensor. It leverages MQTT for data communication and a web application for visualization, creating a fully automated, remotely accessible water supply system.
