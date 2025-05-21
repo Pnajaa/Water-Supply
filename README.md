@@ -26,9 +26,9 @@ The MQTT (Message Queuing Telemetry Transport) protocol, a lightweight messaging
 
 This project builds upon the principles and success of these prior works by integrating a Raspberry Pi Pico, MQTT communication, a non-contact water-level sensor, and a web application into a single cohesive system. It offers a practical and scalable approach to smart water management and acts as a demonstrative platform for mechatronics, embedded systems, and IoT integration.
 
-## 3.  
+## 3. Overall diagram
 
-## 4.  
+## 4. Python program
 ==libary needed==
 
 -flask
@@ -62,12 +62,16 @@ use DEV ip to test the web interface or http://127.0.0.1:5000/
 
 ## 5. Part lists
 1. [Microcontroller: Raspberry Pi Pico](https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf)  *230.00 ฿*
-
+![Image](https://github.com/Pnajaa/Water-Supply/blob/7eb20fb6e453c3e6e84c3923cec3ffeb01c6f8a4/pic/S__13352988_0.jpg)
 2. [Solenoid Valve: SMC SY5120-5LZD-01](https://th.misumi-ec.com/en/vona2/detail/221300029672/?HissuCode=SY5120-5LZD-01) *1,733.15 ฿*
-![Image](https://github.com/Pnajaa/Water-Supply/blob/0e085a5fd8c4df731ea879fc5e38b1565ea44dd0/S__13352976_0.jpg)
+![Image](https://github.com/Pnajaa/Water-Supply/blob/7eb20fb6e453c3e6e84c3923cec3ffeb01c6f8a4/pic/S__13352990_0.jpg)
 4. [Electro-Pneumatic Regulators: SMC ITV2030-322S](https://th.misumi-ec.com/en/vona2/detail/221006475030/?HissuCode=ITV2030-322S) *12,557.90 ฿*
+![Image](https://github.com/Pnajaa/Water-Supply/blob/7eb20fb6e453c3e6e84c3923cec3ffeb01c6f8a4/pic/S__13352994_0.jpg)
 5. [Non-contact liquid level sensor: XKC-Y26-NPN](https://xkc-sensor.com/detail/1428.html) *240.00 ฿*
+![Image](https://github.com/Pnajaa/Water-Supply/blob/7eb20fb6e453c3e6e84c3923cec3ffeb01c6f8a4/pic/S__13352976_0.jpg)
 6. [Brushed DC Motor Driver: DRV8871](https://www.ti.com/lit/ds/symlink/drv8871.pdf?ts=1747713296454&ref_url=https%253A%252F%252Fwww.google.com%252F) *250.00 ฿*
+![Image](https://github.com/Pnajaa/Water-Supply/blob/7eb20fb6e453c3e6e84c3923cec3ffeb01c6f8a4/pic/S__13352992_0.jpg)
 7. [Digital to Analog Convertor Module: ET-MINI I2C D/A](https://www.etteam.com/prodintf/ET-MINI-I2C-DA-10V/th-man-ET-MINI-I2C-DA-10V.pdf) *330.00 ฿*
+![Image](https://github.com/Pnajaa/Water-Supply/blob/7eb20fb6e453c3e6e84c3923cec3ffeb01c6f8a4/pic/S__13352993_0.jpg)
 ## 6. Demonstration Clips
 
