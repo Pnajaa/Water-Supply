@@ -24,7 +24,7 @@ Web-based dashboards and mobile interfaces are also commonly employed to visuali
 
 This project builds upon these advancements by integrating a Raspberry Pi Pico-controlled system with a solenoid valve, compressed air regulator, and non-contact water level sensor. It leverages MQTT for data communication and a web application for visualization, creating a fully automated, remotely accessible water supply system.
 ## 3. Overall diagram
-![Image](https://github.com/Pnajaa/Water-Supply/blob/dad16f0c0299e9a072a9a9c5144a361761774d73/pic/S__13352983_0.jpg)
+![Image](https://github.com/Pnajaa/Water-Supply/blob/ce17080890708fbf71c941f88fd8711987513dea/pic/Overview.jpg)
 ## 4. Python program
 
 =======How to Run=======
